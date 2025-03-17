@@ -137,7 +137,7 @@ function App() {
 
 
   const queryString = new URLSearchParams(selectedFormatOptions).toString();
-  const baseUrl = "http://localhost:3000/";
+  const baseUrl = "https://date-time-format-sandbox.vercel.app/";
   const fullUrl = `${baseUrl}?${queryString}`;
   const handleCopyOptions = () => {
     navigator.clipboard.writeText(JSON.stringify(selectedFormatOptions, null, 2));
